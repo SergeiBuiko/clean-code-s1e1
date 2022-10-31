@@ -4,46 +4,59 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header .header__img {
   width: 100%;
 }
+
 .header .header__more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .header { text-align: center;
+
+  .header {
+    text-align: center;
+  }
+
 }
-}
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .main__task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .add-task-section__task-wrapper {
   display: flex;
 }
+
 .main__list {
   margin:0;
   padding: 0px;
 }
+
 .main__el, .task-status {
   list-style:none;
 }
+
 input, button{
   outline:none;
 }
+
 .main__btn {
   background: none;
   border: 0px;
@@ -53,9 +66,11 @@ input, button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .main__btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .task-status,
 .main__el_label[for="add-task-section__new-task"] {
@@ -67,6 +82,7 @@ input, button{
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -79,6 +95,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .main__task-text:focus {
   color: #333;
 }
@@ -88,6 +105,7 @@ input[type="text"] {
   display: block;
   margin: 0 0 20px;
 }
+
 #add-task-section__new-task {
   width: 318px;
 }
@@ -102,6 +120,7 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
 }
+
 .main__el > * {
   vertical-align: middle;
 }
@@ -109,20 +128,24 @@ input[type="text"] {
 .main__el > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .main__el > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .main__el > .main__task-text {
   width: 226px
 }
+
 .main__delete-btn .main__btn_img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .main__delete-btn .main__btn_img:hover {
   transform: rotateZ(0);
 }
@@ -138,7 +161,7 @@ input[type="text"] {
   display:none
 }
 
-.main__el.edit-task input[type=text] {
+.main__el .edit-task input[type=text] {
   display:inline-block;
   width:224px
 }
