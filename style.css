@@ -21,7 +21,7 @@
 }
 
 @media (max-width:768px) {
-
+  
   .header {
     text-align: center;
   }
@@ -37,7 +37,7 @@
 .main__task-text {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-task-section__task-wrapper {
@@ -52,8 +52,7 @@
 .main__el, .task-status {
   list-style: none;
 }
-
-input, button {
+input, button{
   outline: none;
 }
 
@@ -137,7 +136,7 @@ input[type="text"] {
 }
 
 .main__el > .main__task-text {
-  width: 226px
+  width: 226px;
 }
 
 .main__delete-btn .main__btn_img {
@@ -151,19 +150,19 @@ input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks-section .main__el_label {
-  text-decoration: line-through
+#completed-tasks-section label {
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .main__el input[type=text] {
-  display: none
+  display: none;
 }
 
-.main__el .edit-task input[type=text] {
+.main__el.edit-task input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .main__el.edit-task label {
