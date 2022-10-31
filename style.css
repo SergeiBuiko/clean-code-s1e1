@@ -45,16 +45,16 @@
 }
 
 .main__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main__el, .task-status {
-  list-style:none;
+  list-style: none;
 }
 
-input, button{
-  outline:none;
+input, button {
+  outline: none;
 }
 
 .main__btn {
@@ -158,14 +158,14 @@ input[type="text"] {
 
 /* Edit Task */
 .main__el input[type=text] {
-  display:none
+  display: none
 }
 
 .main__el .edit-task input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .main__el.edit-task label {
-  display:none;
+  display: none;
 }
