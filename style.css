@@ -151,7 +151,7 @@ input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks-section label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
