@@ -34,13 +34,13 @@
   margin: 0 auto 0;
 }
 
-.main__task-text {
+.section_item {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.add-task-section__task-wrapper {
+.add-section__task-wrapper {
   display: flex;
 }
 
@@ -53,6 +53,8 @@
 .task-status {
   list-style: none;
 }
+
+/* Default reset */
 input, button{
   outline: none;
 }
@@ -73,7 +75,7 @@ input, button{
 
 /* Heading */
 .task-status,
-.main__el_label[for="add-task-section__new-task"] {
+.main__el_label[for="add-section__new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +85,7 @@ input, button{
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.main__task-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,12 +103,12 @@ input[type="text"] {
 }
 
 /* New Task */
-.main__el_label[for="add-task-section__new-task"] {
+.main__el_label[for="add-section__new-task"] {
   display: block;
   margin: 0 0 20px;
 }
 
-#add-task-section__new-task {
+#add-section__new-task {
   width: 318px;
 }
 
@@ -125,47 +127,47 @@ input[type="text"] {
   vertical-align: middle;
 }
 
-.main__el > input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
 
-.main__el > label {
+.main__el_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.main__el > .main__task-text {
+.main__task-text_hide{
   width: 226px;
 }
 
-.main__delete-btn .main__btn_img {
+.main__btn_delete .main__btn_img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.main__delete-btn .main__btn_img:hover {
+.main__btn_delete .main__btn_img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .main__el_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.main__el input[type=text] {
+.main__el .main__task-text_hide {
   display: none;
 }
 
-.main__el.edit-task input[type=text] {
+.main__el.edit-task .main__task-text_hide {
   display: inline-block;
   width: 224px;
 }
 
-.main__el.edit-task label {
+.main__el.edit-task .main__el_label {
   display: none;
 }
